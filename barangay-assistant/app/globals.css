@@ -1,26 +1,18 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* app/globals.css */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Remove default browser margin */
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+               Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; /* Nice default font stack */
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333; /* Darker text color for readability */
+}
+
+a {
+  color: #0070f3; /* Default link color */
+  text-decoration: none; /* Remove underline from links by default */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
